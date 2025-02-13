@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" type="text/css" href="/public/signup.css"> --}}
+    <title>Document</title>
+</head>
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center; /* Center align form content */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Center the "Create Account" link below the password input */
+a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ 
+</style>
+<body>
+    <form action="/login" method="post">
+        <h1>Login Page</h1>
+        <input type="text" name="name" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Submit</button>
+        <a href="/signup">Create Account</a>
+    </form>
+</body>
+
+</body>
+</html>
